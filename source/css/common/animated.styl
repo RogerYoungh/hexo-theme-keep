@@ -6,10 +6,10 @@ transition-g() {
 }
 
 transition-t(property, delay, duration, function) {
-  $temp-property = "color, background, box-shadow, border-color";
-  $temp-delay = "0s, 0s, 0s, 0s";
-  $temp-duration = "0.2s, 0.2s, 0.2s, 0.2s";
-  $temp-function = "ease, ease, ease, ease";
+  $temp-property = "box-shadow, border-color";
+  $temp-delay = "0s, 0s";
+  $temp-duration = "0.5s, 0.5s";
+  $temp-function = "ease, ease";
 
   for p in convert(property) {
     $temp-property += ("," + p);
