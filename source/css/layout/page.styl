@@ -3,7 +3,7 @@ $page-aside-width = $temp-width ? convert($temp-width):260px;
 
 .page-container {
   position: relative;
-  transition-t("padding-left", "0", "0.3", "ease-out");
+  transition-t("padding-left", "0", "0.3", "ease");
 
 
   +keep-tablet() {
@@ -47,7 +47,7 @@ $page-aside-width = $temp-width ? convert($temp-width):260px;
       height: $header-height;
       z-index: $z-index-5;
       box-sizing: border-box;
-      transition-t("transform, padding-left, height", "0, 0, 0", "0.3, 0.2, 0.2", "ease-out, linear, ease");
+      transition-t("transform, padding-left, height", "0, 0, 0", "0.38, 0.38, 0.2", "ease, ease, ease");
 
       &.hide {
         transform: translateY(-105%);
@@ -134,7 +134,7 @@ $page-aside-width = $temp-width ? convert($temp-width):260px;
 
     hover-style(false, 0, 0);
 
-    transition-t("left, transform", "0, 0", "0.3, 0.2", "ease-out, linear");
+    transition-t("left, transform", "0, 0", "0.3, 0.2", "ease, ease");
 
     +keep-tablet() {
       left: - $page-aside-width !important;

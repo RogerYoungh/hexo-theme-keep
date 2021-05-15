@@ -10,7 +10,7 @@ $tools-item-border-radius = 1px;
     width: $tools-item-width;
     height: $tools-item-width;
     font-size: $tools-item-font-size;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     cursor: pointer;
     border-right: none;
     border-radius: $tools-item-border-radius;
@@ -59,7 +59,7 @@ $tools-item-border-radius = 1px;
   .side-tools-list {
     opacity: 0;
     transform: translateX(100%);
-    transition-t("transform, opacity", "0, 0", "0.2, 0.2", "linear, linear");
+    transition-t("transform, opacity", "0, 0", "0.2, 0.2", "ease, ease");
 
     .tool-expand-width {
       +keep-tablet() {
