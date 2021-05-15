@@ -27,16 +27,9 @@ function initTOC() {
           element.addEventListener('click', event => {
             event.preventDefault();
             const offset = target.getBoundingClientRect().top + window.scrollY;
-            window.anime({
-              targets: document.scrollingElement,
-              duration: 500,
-              easing: 'linear',
-              scrollTop: offset - 10,
-              complete: function () {
-                setTimeout(() => {
-                  KEEP.utils.pageTop_dom.classList.add('hide');
-                }, 100)
-              }
+            window.scrollTo({
+              top: offset - 10,
+              behavior: "smooth"
             });
           });
           return target;
@@ -57,13 +50,6 @@ function initTOC() {
           parent = parent.parentNode;
         }
         // Scrolling to center active TOC element if TOC content is taller then viewport.
-        const tocElement = document.querySelector('.post-toc-wrap');
-        window.anime({
-          targets: tocElement,
-          duration: 200,
-          easing: 'linear',
-          scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
-        });
       },
 
       showPageAsideWhenHasTOC() {

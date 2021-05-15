@@ -7,31 +7,19 @@ KEEP.initBack2Top = () => {
     back2BottomButton_dom: document.querySelector('.tool-scroll-to-bottom'),
 
     back2top() {
-      const scrollTopTimer = setInterval(function () {
-        let top = document.body.scrollTop || document.documentElement.scrollTop;
-        let speed = top / 2;
-        if (document.body.scrollTop !== 0) {
-          document.body.scrollTop -= speed;
-        } else {
-          document.documentElement.scrollTop -= speed;
-        }
-        if (top === 0) {
-          clearInterval(scrollTopTimer);
-        }
-      }, 50);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     },
 
     back2Bottom() {
       let scrollHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
       let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-      const scrollBottomTimer = setInterval(function () {
-        if (!scrollTop) scrollTop = 10;
-        scrollTop = Math.floor(scrollTop + scrollTop / 2);
-        window.scrollTo(0, scrollTop);
-        if (scrollTop >= scrollHeight) {
-          clearInterval(scrollBottomTimer);
-        }
-      }, 50);
+      window.scrollTo({
+        top: scrollHeight,
+        behavior: "smooth"
+      });
     },
 
     initBack2Top() {
