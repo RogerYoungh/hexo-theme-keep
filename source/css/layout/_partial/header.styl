@@ -14,6 +14,11 @@ $logo-image-box-width = 46px;
   padding-top: $scroll-progress-bar-height;
 
   hover-style(false, 0, 0);
+  transition-t("padding-left","0","0.3","ease");
+
+  +keep-tablet() {
+    padding-left: 0 !important;
+  }
 
   .header-content {
     position: relative;
@@ -299,6 +304,9 @@ $logo-image-box-width = 46px;
     }
   }
 
+}
+.window-mask {
+  padding-left: 260px;
 }
 
 .header-drawer-show {

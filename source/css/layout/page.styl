@@ -137,8 +137,7 @@ $page-aside-width = $temp-width ? convert($temp-width):260px;
     transition-t("left, transform", "0, 0", "0.3, 0.2", "ease-out, linear");
 
     +keep-tablet() {
-      left: 0 !important;
-      display: none !important;
+      left: - $page-aside-width !important;
     }
 
   }

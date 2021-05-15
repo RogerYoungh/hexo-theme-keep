@@ -4,7 +4,7 @@ function initLeftSideToggle() {
   KEEP.utils.leftSideToggle = {
 
     toggleBar: document.querySelector('.page-aside-toggle'),
-    pageTopDom: document.querySelector('.page-main-content-top'),
+    pageTopDom: document.querySelector('.header-wrapper'),
     containerDom: document.querySelector('.page-container'),
     leftAsideDom: document.querySelector('.page-aside'),
     toggleBarIcon: document.querySelector('.page-aside-toggle i'),
