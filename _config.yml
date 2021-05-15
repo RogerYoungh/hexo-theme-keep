@@ -2,9 +2,9 @@
 #  Your basic info
 # ---------------------------------------------------------------------------------------
 base_info:
-  title: Keep Theme
-  author: Keep Team
-  url: https://keep.xpoet.cn/
+  title: Roger Young 的博客
+  author: rogeryoungh
+  url: https://rogeryoungh.github.io/
   # Logo image (You can use local image, image external link or don’t fill)
   logo_img:
 
@@ -14,26 +14,26 @@ base_info:
 # ---------------------------------------------------------------------------------------
 style:
   # Theme primary color
-  primary_color: '#0066CC'
+  primary_color: '#00AADD'
 
   # Avatar (You can use local image or image external link)
-  avatar: /images/avatar.svg
+  avatar: /images/avatar.png
 
   # Favicon (You can use local image or image external link)
-  favicon: /images/logo.svg
+  favicon: /images/logo.png
 
   # Article image align position, value: left | center
-  article_img_align: left
+  article_img_align: center
 
   # Left side width
   left_side_width: 260px
 
   # Content area max width
-  content_max_width: 920px
+  content_max_width: 820px
 
   # Mouse hover
   hover:
-    shadow: false   # shadow effect when the mouse hover
+    shadow: true   # shadow effect when the mouse hover
     scale: false    # scale effect when the mouse hover
 
   # First screen
@@ -45,16 +45,16 @@ style:
   # Scroll style settings
   scroll:
     progress_bar:
-      enable: false
+      enable: true
     percent:
-      enable: false
+      enable: true
 
 
 # ---------------------------------------------------------------------------------------
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: false
+  enable: true
   links:
     github:          # your GitHub URL
     weixin:          # your WeChat QR-Code URL
@@ -75,7 +75,7 @@ menu:
   # Categories: /categories
   # Tags: /tags
   # Links: /links
-  # About: /about
+  About: /about
   # Changelog: /changelog
   # ......
 
@@ -85,10 +85,10 @@ menu:
 # ---------------------------------------------------------------------------------------
 home_article:
   category:
-    enable: false     # show category in home page article block
+    enable: true     # show category in home page article block
     limit: 3          # max number of categories shown in home page article block
   tag:
-    enable: false     # show tags in home page article block
+    enable: true     # show tags in home page article block
     limit: 5          # max number of tags shown in home page article block
 
 
@@ -107,16 +107,16 @@ post:
   # Author label
   author_label:
     enable: true
-    auto: true  # if true, show Lv1, Lv2, Lv3... , If false, show custom label
+    auto: false  # if true, show Lv1, Lv2, Lv3... , If false, show custom label
     # label array item can be one or more
-    custom_label_list: [ "Trainee", "Engineer", "Architect", "CTO", "BOSS" ]
+    custom_label_list: [ "学生" ]
 
 
 # ---------------------------------------------------------------------------------------
 # Code copy
 # ---------------------------------------------------------------------------------------
 code_copy:
-  enable: false
+  enable: true
   style: default        # values: default | mac
 
 
@@ -124,13 +124,13 @@ code_copy:
 # Table of Contents in the Sidebar
 # ---------------------------------------------------------------------------------------
 toc:
-  enable: false
+  enable: true
 
   # Automatically add list number to toc.
-  number: false
+  number: true
 
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
 
   # If true, open TOC every time when you enter the article page
   init_open: false
@@ -140,7 +140,7 @@ toc:
 # Post copyright info
 # ---------------------------------------------------------------------------------------
 copyright_info:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -162,8 +162,8 @@ website_count:
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
-  enable: false
-  preload: false     # Preload the search data when the page loads
+  enable: true
+  preload: true     # Preload the search data when the page loads
 
 
 # ---------------------------------------------------------------------------------------
@@ -171,7 +171,7 @@ local_search:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: false
-  use: valine  # values: valine | gitalk | twikoo
+  use: gitalk  # values: valine | gitalk | twikoo
 
   # Valine
   # See: https://github.com/xCss/Valine
@@ -201,7 +201,7 @@ comment:
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
 rss:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -229,7 +229,7 @@ pjax:
 # Footer settings
 # ---------------------------------------------------------------------------------------
 footer:
-  since: 2020      # the starting year of your website, Can be null
+  since: 2021
   icp:             # ICP record number of your website, Can be null
 
 
