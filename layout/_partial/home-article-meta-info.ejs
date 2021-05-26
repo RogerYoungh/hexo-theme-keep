@@ -23,7 +23,7 @@
                     if (theme.home_article.tag.limit === 0 || i + 1 <= theme.home_article.tag.limit) { %>
                         <li>
                             <%= i === 0 ? '' : '| ' %>
-                            <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>&nbsp;
+                            &nbsp;<a href="<%- url_for(tag.path) %>"><%= tag.name %></a>&nbsp;
                         </li>
                     <% }}); %>
                 </ul>
