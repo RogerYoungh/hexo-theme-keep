@@ -20,7 +20,7 @@
             <ul>
                 <% articleObject.tags.forEach((tag, i) => { %>
                     <li>
-                        <%= i === 0 ? '' : '| ' %><a href="<%- url_for(tag.path) %>"><%= tag.name %></a>&nbsp;
+                        <%= i === 0 ? '' : '| ' %>&nbsp;<a href="<%- url_for(tag.path) %>"><%= tag.name %></a>&nbsp;
                     </li>
                 <% }); %>
             </ul>
